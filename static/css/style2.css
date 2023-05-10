@@ -1,0 +1,182 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.box4{
+    background-image:linear-gradient(rgba(182, 179, 179, 0.6),rgba(171, 169, 169, 0.9)) ,url(./flowers.jpg);
+    background-position: center;
+    background-size: cover;
+    /* border: 2px solid cyan; */
+    height: 75vh;
+    flex-basis: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.box4 h2{
+    font-size: 25px;
+    margin-top: 1.5%;
+    color: black;
+}
+.box4 h3{
+    font-size: 21px;
+    font-style:italic;
+    font-family:'Gill Sans';
+    color: black;
+
+}
+/*  */
+.two{
+    /* border: 2px solid blue; */
+    width: 1345px;
+    height: 445px;
+}
+.two p{
+    color: black;
+    width: 800px;
+    margin-top: 5%;
+    margin-left: 20%;
+}
+/*  */
+
+.itemm{
+    /* border: 2px solid blue; */
+    width: 1345px;
+    height: 545px;
+}
+.itemm p{
+    color: black;
+    width: 800px;
+    margin-top: 11%;
+    margin-left: 30%;
+}
+
+/*  */
+
+.itemmm{
+    /* border: 2px solid blue; */
+    width: 1345px;
+    height: 545px;
+}
+.itemmm p{
+    color: black;
+    width: 800px;
+    margin-top: 11%;
+    margin-left: 30%;
+}
+.boxia{
+    /* border: 3px solid green; */
+    border-radius: 12px;
+    box-shadow: 2px 2px 2px 2px gray;
+    border-radius: 5px;
+    background: linear-gradient(to right,white 5%,rgb(233, 247, 200));
+    position:absolute;
+    top:10%;
+    left:22%;
+    width: 750px;
+    height: 380px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  } 
+  .a{
+    margin-top: 25px;
+  }
+  .box-pdf-download img {
+    height: 30px;
+    width: 30px;
+  }
+  .box-sub{
+    margin-top: 1%;
+    text-decoration: none;
+  }
+  .boxia a{
+    margin-top: 45px;
+    text-decoration: none;
+    color: white;
+  }
+
+  .flex{
+    /* border: 2px solid red; */
+    height: 67vh;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.box1{
+    filter: contrast(1);
+    background-image:linear-gradient(rgba(219, 216, 216, 0.6),rgba(214, 211, 211, 0.9)) ,url(./clouds.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* border: 2px solid green; */
+    height: 500px;
+    flex-basis: 50%;
+}
+.box1 h3{
+    text-align: center;
+}
+.box1 p{
+    margin-top: 5%;
+    letter-spacing: 1.5px;
+    text-align: center;
+    width: 450px;
+}
+.box1 form{
+    /* border:2px solid white; */
+    width: 100px;
+    margin-top: 6.5%;
+}
+.box1 button{
+    background-color: rgb(234, 103, 37);
+    color: white;
+    padding: 5px;
+    padding-top: 3px;
+    border-radius: 12px;
+}
+.box1 button a{
+    text-decoration: none;
+    color: white;
+}
+.box2 button{
+    background-color: rgb(234, 103, 37);
+    color: white;
+    padding: 5px;
+    padding-top: 3px;
+    border-radius: 12px;
+    margin-top: 7.7%;
+}
+.box2 button a{
+    text-decoration: none;
+    color: white;
+}
+.box2{
+    background-image:linear-gradient(rgba(219, 216, 216, 0.6),rgba(214, 211, 211, 0.9)) ,url(./clouds.jpg);
+    background-position: center;
+    background-size: cover;
+    /* border: 2px solid green; */
+    height: 500px;
+    flex-basis: 50%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.box2 h2{
+    margin-top: 55px;
+}
+.box2 p{
+    text-align: center;
+    letter-spacing: 1.5px;
+    width: 500px;
+    margin-top: 50px;
+}
+.box2 h4{
+    margin-top: 15px;
+    text-align: center;
+    background-color: aliceblue;
+    border-radius: 20px;
+    width: 165px;
+}

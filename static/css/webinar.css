@@ -1,0 +1,70 @@
+.arambh{
+    background-image: url(./pic3.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 55vh;
+    /* background-repeat: no-repeat; */
+}
+.navbar-toggler{
+    border: 2px solid white;
+}
+.dropdown-menu{
+    background-color: rgb(23, 23, 23);
+}
+.dropdown-item{
+    line-height: 40px;
+    color: rgb(191, 187, 187);
+}
+.dropdown-item:hover{
+    background-color: rgb(23, 23, 23);
+    color: rgb(238, 209, 115);
+}
+.dropdown:hover > .dropdown-menu, .dropend:hover > .dropdown-menu{
+    display: block;
+  }
+
+nav{
+    width: 850px;
+    height: 350px;
+}
+nav a{
+    background-color: lime;
+    border-radius: 12px;
+    padding: 12%;
+}
+.main{
+    /* border: 2px solid red; */
+    height: 45vh;
+    display: flex;
+    flex-direction: row;
+}
+.web{
+    /* border: 2px solid red; */
+    width: 33%;
+    height: 73%;
+}
+.web p{
+    margin-top: 10px;
+}
+
+
+.meet{
+    /* border: 2px solid red; */
+    width: 33.3%;
+}
+.meet p{
+    margin-top: 10px;
+}
+
+
+.web{
+    /* border: 2px solid red; */
+    width: 33.3%;
+}
+.session{
+    /* border: 2px solid red; */
+    width: 33.3%;
+}
+.session p{
+    margin-top: 10px;
+}

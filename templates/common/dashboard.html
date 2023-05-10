@@ -1,0 +1,197 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="{% static 'css/dashboard.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>    
+</head>
+<body>
+    <!--  -->
+     <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Notebook.in</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon" id="coloor"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto"> <!--mb-2 mb-lg-0-->
+                    <li class="nav-item">
+                        <a class="nav-link" href="./dashboard.html">
+                            Home
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./dashboard.html">
+                            My profile
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'login' %}">
+                            Logout
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--  -->
+    <h4> <a href="{% url 'events' %}">Events</a></h4>
+    <h4><a href="{% url 'webinars' %}">Webinars</a></h4>
+    <h4><a href="./webinar.html">Motivational Sessions</a></h4>
+    <h4><a href="{% url 'notes' %}">Study Material</a></h4>
+    <h4><a href="{% url 'courses' %}">Courses</a></h4>
+    <h4><a href="#">Internships</a></h4>
+    <div class="week">
+        <div id="carouselExampleAutoplaying" class="carousel slide slider" data-bs-ride="carousel">
+            <div class="carousel-inner one">
+                <div class="carousel-item active two">
+                        <div class="container">
+                            <h3>Notice Board</h3>
+                            <h1>Internship In Bhubaneswar</h1>
+                            <p>Skills - HTML,CSS,JS,BOOTSTRAP</p>
+                    
+                            <div class="course-details">
+                                <p><strong>post Vacant - </strong> 2</p>
+                            </div>
+                    
+                            <div class="buy-button">
+                                <a href="#" class="price-tag">Apply for Free</a>
+                            </div>
+                        </div>
+                </div>
+                <div class="carousel-item itemm">
+                    <div class="container">
+                        <h3>Notice Board</h3>
+                        <h1>Webinar On AIML</h1>
+                        <p>Have a great idea on today's technology</p>
+                
+                        <div class="course-details">
+                            <p><strong>Webinar Date</strong> 4th November - 10:00 AM</p>
+                        </div>
+                
+                        <div class="buy-button">
+                            <a href="#" class="price-tag">Enroll for Free</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item itemmm">
+                    <div class="container">
+                        <h3>Notice Board</h3>
+                        <h1>Internship in Cuttack</h1>
+                        <p>There is a chance of getting selected</p>
+                
+                        <div class="course-details">
+                            <p><strong>post vacant - </strong>16</p>
+                        </div>
+                
+                        <div class="buy-button">
+                            <a href="#" class="price-tag">Enroll for Free</a>
+                        </div>
+                    </div>
+                </div>
+                
+             
+              
+            </div>
+            <button class="carousel-control-prev btnl" type="button" data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next btnr" type="button" data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    <!--  -->
+    <div class="main">
+        <div class="first"></div>
+        <div class="second">
+            <img src="{% static 'img/profile.jpg' %}" alt="">
+            <div class="info">
+                <div class="card o-hidden border-0 shadow-lg my-5 col-lg-5">
+                    <div class="card-body">
+                        <h2 class="uname" >{{user.first_name}} {{user.last_name}}</h2>
+                        <p class="email"><strong>Email: </strong> {{user.username}} </p>
+                        <p class="emaill"><strong>Email: </strong> {{user.email}} </p>
+                        <p class="bio"><strong>Bio: </strong> {{user.profile.bio}} </p>
+                        <p class="phn"><strong>Phone Number: </strong> {{user.profile.phone_number}} </p>
+                        <p class="dob"><strong>DOB: </strong> {{user.profile.birth_date}} </p>
+                        <a href="{% url 'profile-update' %}" class="btn btn-sm btn-primary shadow-sm butt">Update Profile</a>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+<div class="box1"><img src="{% static 'img/pic1.jpg' %}" alt="">
+        <h2 class="hh1">Career</h2>
+        <p class="pp1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem ad dolorum mollitia impedit, suscipit
+            inventore. Quaerat eum dignissimos enim odit architecto unde id iste sit accusamus vero, fugit aliquid.
+            Saepe qui aliquid modi pariatur necessitatibus? Amet, commodi eum. Porro itaque deleniti modi ipsum officiis
+            officia minima commodi vitae sed sint?
+        </p>
+
+        <img src="{% static 'img/pic2.jpg' %}" alt="">
+        <h2 class="hh2">Guidance</h2>
+        <p class="p2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem ad dolorum mollitia impedit, suscipit
+            inventore. Quaerat eum dignissimos enim odit architecto unde id iste sit accusamus vero, fugit aliquid.
+            Saepe qui aliquid modi pariatur necessitatibus? Amet, commodi eum. Porro itaque deleniti modi ipsum officiis
+            officia minima commodi vitae sed sint?
+        </p>
+
+
+        <img src="{% static 'img/pic3.jpg' %}" alt="">
+        <h2 class="hh3">Notes</h2>
+        <p class="p3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem ad dolorum mollitia impedit, suscipit
+            inventore. Quaerat eum dignissimos enim odit architecto unde id iste sit accusamus vero, fugit aliquid.
+            Saepe qui aliquid modi pariatur necessitatibus? Amet, commodi eum. Porro itaque deleniti modi ipsum officiis
+            officia minima commodi vitae sed sint?
+        </p>
+
+
+    </div>
+    <div class="box2">
+        <img src="{% static 'img/pic4.jpg' %}" alt="" class="imgg">
+        <h2 class="hh4">Webinars | Meetups</h2>
+        <p class="p4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem ad dolorum mollitia impedit, suscipit
+            inventore. Quaerat eum dignissimos enim odit architecto unde id iste sit accusamus vero, fugit aliquid.
+            Saepe qui aliquid modi pariatur necessitatibus? Amet, commodi eum. Porro itaque deleniti modi ipsum officiis
+            officia minima commodi vitae sed sint?<br>
+            <button class="btnn"><a href="">Upcoming Webinars</a></button>
+        </p>
+</div>
+
+<div class="footer">
+    <div class="first">
+        <a href="#" class="lo">NoteBook.in</a>
+        <!-- <div class="link"> -->
+        <h5>QUICK LINKS</h5>
+        <div class="gara"></div>
+        <ul class="Nbos">
+            <l1><a href="#">Us</a></l1>
+            <l1><a href="#">Impact</a></l1>
+            <l1><a href="#">Innovate</a></l1>
+        </ul>
+    <!-- </div> -->
+        <p>Notebooks Infotech Pvt. Ltd <br>
+            plot no 2484, Gangapada <br>Bhubaneswar <br>Odisha -751012</p>
+            <div class="imu"><img src="./cal.jpg" alt="" srcset="" class="lastimu"><img src="./mal.jpg" alt="" srcset="" class="lastimu"><img src="./gmal.jpg" class="lastimu" alt="" srcset=""></div>
+        <div class="cntn">
+            12345678 <br> Notebook.in <br> Notebook Bhubaneswar
+        </div>
+
+    </div>
+</div>
+</body>
+</html>

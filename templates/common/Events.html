@@ -1,0 +1,203 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEBINAR || EVENTS</title>
+    <link rel="stylesheet" href="{% static 'css/events.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
+</head>
+<body>
+    <h5>Upcoming Webinars</h5>
+    <div class="web b">
+        <div id="carouselExampleAutoplaying" class="carousel slide slider" data-bs-ride="carousel">
+            <div class="carousel-inner one">
+                <div class="carousel-item active two">
+                        <div class="container">
+                            <h1>Webinar On Network Security</h1>
+                            <p>Get A Vast Knowledge On netweork Security</p>
+                    
+                            <div class="course-details">
+                                <p><strong>Webinar Date</strong> 2nd June - 7:00 PM</p>
+                            </div>
+                    
+                            <div class="buy-button">
+                                <a href="{% url 'book' %}" class="price-tag">Enroll for Free</a>
+                            </div>
+                        </div>
+                </div>
+                <div class="carousel-item itemm">
+                    <div class="container">
+                        <h1>Webinar On AIML</h1>
+                        <p>Have a great idea on today's technology</p>
+                
+                        <div class="course-details">
+                            <p><strong>Webinar Date</strong> 4th November - 10:00 AM</p>
+                        </div>
+                
+                        <div class="buy-button">
+                            <a href="{% url 'book' %}" class="price-tag">Enroll for Free</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item itemmm">
+                    <div class="container">
+                        <h1>Webinar On Social Media By Sampati Sinha</h1>
+                        <p>Have a great idea on the impacts of social Media</p>
+                
+                        <div class="course-details">
+                            <p><strong>Webinar Date</strong> 2nd December - 5:00 PM</p>
+                        </div>
+                
+                        <div class="buy-button">
+                            <a href="{% url 'book' %}" class="price-tag">Enroll for Free</a>
+                        </div>
+                    </div>
+                </div>
+                
+             
+              
+            </div>
+            <button class="carousel-control-prev btnl" type="button" data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next btnr" type="button" data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    <h5>Upcoming Events</h5>
+    <div class="events b">
+        <div id="carouselExampleAutoplaying" class="carousel slide slider" data-bs-ride="carousel">
+            <div class="carousel-inner one">
+                <div class="carousel-item active two">
+                        <div class="container">
+                            <h1>Event On Network Security</h1>
+                            <p>Get A Vast Knowledge On netweork Security</p>
+                    
+                            <div class="course-details">
+                                <p><strong>Webinar Date</strong> 2nd June - 7:00 PM</p>
+                            </div>
+                    
+                            <div class="buy-button">
+                                <a href="{% url 'book' %}" class="price-tag">Enroll for Free</a>
+                            </div>
+                        </div>
+                </div>
+                <div class="carousel-item itemm">
+                    <div class="container">
+                        <h1>Webinar On AIML</h1>
+                        <p>Have a great idea on today's technology</p>
+                
+                        <div class="course-details">
+                            <p><strong>Webinar Date</strong> 4th November - 10:00 AM</p>
+                        </div>
+                
+                        <div class="buy-button">
+                            <a href="{% url 'book' %}" class="price-tag">Enroll for Free</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item itemmm">
+                    <div class="container">
+                        <h1>Webinar On Social Media By Sampati Sinha</h1>
+                        <p>Have a great idea on the impacts of social Media</p>
+                
+                        <div class="course-details">
+                            <p><strong>Webinar Date</strong> 2nd December - 5:00 PM</p>
+                        </div>
+                
+                        <div class="buy-button">
+                            <a href="{% url 'book' %}" class="price-tag">Enroll for Free</a>
+                        </div>
+                    </div>
+                </div>
+                
+             
+              
+            </div>
+            <button class="carousel-control-prev btnl" type="button" data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next btnr" type="button" data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    <h5>Upcoming Motivational Sessions</h5>
+    <div class="motivation b">
+        <div id="carouselExampleAutoplaying" class="carousel slide slider" data-bs-ride="carousel">
+            <div class="carousel-inner one">
+                <div class="carousel-item active two">
+                        <div class="container">
+                            <h1>Webinar On Network Security</h1>
+                            <p>Get A Vast Knowledge On netweork Security</p>
+                    
+                            <div class="course-details">
+                                <p><strong>Webinar Date</strong> 2nd June - 7:00 PM</p>
+                            </div>
+                    
+                            <div class="buy-button">
+                                <a href="{% url 'book' %}" class="price-tag">Enroll for Free</a>
+                            </div>
+                        </div>
+                </div>
+                <div class="carousel-item itemm">
+                    <div class="container">
+                        <h1>Webinar On AIML</h1>
+                        <p>Have a great idea on today's technology</p>
+                
+                        <div class="course-details">
+                            <p><strong>Webinar Date</strong> 4th November - 10:00 AM</p>
+                        </div>
+                
+                        <div class="buy-button">
+                            <a href="{% url 'book' %}" class="price-tag">Enroll for Free</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item itemmm">
+                    <div class="container">
+                        <h1>Webinar On Social Media By Sampati Sinha</h1>
+                        <p>Have a great idea on the impacts of social Media</p>
+                
+                        <div class="course-details">
+                            <p><strong>Webinar Date</strong> 2nd December - 5:00 PM</p>
+                        </div>
+                
+                        <div class="buy-button">
+                            <a href="{% url 'book' %}" class="price-tag">Enroll for Free</a>
+                        </div>
+                    </div>
+                </div>
+                
+             
+              
+            </div>
+            <button class="carousel-control-prev btnl" type="button" data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next btnr" type="button" data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+</body>
+</html>
